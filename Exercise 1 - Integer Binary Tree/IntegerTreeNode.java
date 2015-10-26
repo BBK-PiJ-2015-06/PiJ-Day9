@@ -93,4 +93,24 @@ public class IntegerTreeNode {
 		String output = "[" + this.value + leftOutput + rightOutput + "]";
 		return output;
 	}
+	
+	public int depth() {
+		if(left == null && right == null) {
+			return 0;
+		} else {
+			int leftOutput = 0;
+			int rightOutput = 0;
+			if(left != null) {
+				leftOutput = 1 + left.depth();
+			}
+			if(right != null) {
+				rightOutput = 1 + right.depth();
+			}
+			if (leftOutput > rightOutput) {
+				return leftOutput;
+			} else {
+				return rightOutput;
+			}
+		}
+	}
 }
