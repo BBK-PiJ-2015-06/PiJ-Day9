@@ -64,6 +64,7 @@ public class IntegerTreeNode {
 		}
 	}
 	
+	//Method for creating complex string.
 	public String toString() {
 		String leftOutput = "";
 		String rightOutput = "";
@@ -81,6 +82,7 @@ public class IntegerTreeNode {
 		return output;
 	}
 	
+	//Method for creating simple string.
 	public String toStringSimple() {
 		String leftOutput = "";
 		String rightOutput = "";
@@ -94,6 +96,7 @@ public class IntegerTreeNode {
 		return output;
 	}
 	
+	//Method for calculating depth of tree.
 	public int depth() {
 		if(left == null && right == null) {
 			return 0;
