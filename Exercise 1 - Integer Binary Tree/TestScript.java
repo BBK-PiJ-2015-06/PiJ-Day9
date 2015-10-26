@@ -15,6 +15,7 @@ public class TestScript {
 			System.out.println("3 - Show maximum value.");
 			System.out.println("4 - Show minimum value.");
 			System.out.println("5 - Convert to complete string.");
+			System.out.println("6 - Convert to simple string.");
 			System.out.println("Any other number - QUIT.");
 			s = System.console().readLine();
 			int choice = Integer.parseInt(s);
@@ -52,6 +53,11 @@ public class TestScript {
 				case 5:
 					String complete = tree.toString();
 					System.out.println(complete);
+					break;
+				
+				case 6:
+					String simple = tree.toStringSimple();
+					System.out.println(simple);
 					break;
 				
 				default:

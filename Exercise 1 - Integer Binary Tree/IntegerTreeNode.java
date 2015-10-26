@@ -80,4 +80,17 @@ public class IntegerTreeNode {
 		String output = "[" + this.value + leftOutput + rightOutput + "]";
 		return output;
 	}
+	
+	public String toStringSimple() {
+		String leftOutput = "";
+		String rightOutput = "";
+		if(left != null) {
+			leftOutput = left.toStringSimple();
+		}
+		if(right != null) {
+			rightOutput = right.toStringSimple();
+		}
+		String output = "[" + this.value + leftOutput + rightOutput + "]";
+		return output;
+	}
 }
