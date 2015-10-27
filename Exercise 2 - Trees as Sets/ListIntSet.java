@@ -37,7 +37,20 @@ public class ListIntSet implements IntSet {
 	
 
 	public boolean containsVerbose(int i) {
-		return true;
+		System.out.println(this.value);
+		if(this.next == null) {
+			if(this.value == i) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			if(this.value == i) {
+				return true;
+			} else {
+				return this.next.containsVerbose(i);
+			}
+		}
 	}
 	
 

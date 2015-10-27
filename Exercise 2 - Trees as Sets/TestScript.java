@@ -11,7 +11,7 @@ public class TestScript {
 		list.add(7);
 		
 			
-		if(list.contains(12)) {
+		if(list.containsVerbose(12)) {
 			System.out.println("List already contains this number.");
 		} else {
 			System.out.println("List does not contain this number.");
