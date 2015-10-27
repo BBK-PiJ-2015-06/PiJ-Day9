@@ -30,7 +30,23 @@ public class TreeIntSet implements IntSet {
 	
 
 	public boolean contains(int i) {
-		
+		if(this.value == i) {
+			return true;
+		} else {
+			if(i > this.value) {
+				if(right == null) {
+					return false;
+				} else {
+					right.contains(i);
+				}
+			} else {
+				if(left == null) {
+					return false;
+				} else {
+					left.contains(i);
+				}
+			}
+		}
 	}
 	
 
