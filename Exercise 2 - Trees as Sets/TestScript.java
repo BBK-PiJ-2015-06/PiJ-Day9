@@ -1,4 +1,5 @@
 public class TestScript {
+	
 	public static void main(String[] args) {
 		TreeIntSet tree = new TreeIntSet(10);
 		tree.add(5);
@@ -18,4 +19,5 @@ public class TestScript {
 		String s = tree.toString();
 		System.out.print(s);
 	}
+	
 }
