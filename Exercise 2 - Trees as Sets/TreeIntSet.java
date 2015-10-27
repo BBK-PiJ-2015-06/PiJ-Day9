@@ -28,7 +28,6 @@ public class TreeIntSet implements IntSet {
 		}
 	}
 	
-
 	public boolean contains(int i) {
 		if(this.value == i) {
 			return true;
@@ -46,7 +45,6 @@ public class TreeIntSet implements IntSet {
 		} 
 	}
 	
-
 	public boolean containsVerbose(int i) {
 		System.out.println(this.value);
 		if(this.value == i) {
@@ -65,7 +63,6 @@ public class TreeIntSet implements IntSet {
 		} 
 	}
 	
-
 	public String toString() {
 		String leftOutput = "";
 		String rightOutput = "";

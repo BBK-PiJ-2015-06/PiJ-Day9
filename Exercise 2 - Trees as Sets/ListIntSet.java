@@ -18,7 +18,6 @@ public class ListIntSet implements IntSet {
 		}
 	}
 	
-
 	public boolean contains(int i) {
 		if(this.next == null) {
 			if(this.value == i) {
@@ -35,7 +34,6 @@ public class ListIntSet implements IntSet {
 		}
 	}
 	
-
 	public boolean containsVerbose(int i) {
 		System.out.println(this.value);
 		if(this.next == null) {
@@ -53,7 +51,6 @@ public class ListIntSet implements IntSet {
 		}
 	}
 	
-
 	public String toString() {
 		String output = this.value + ", ";
 		if(this.next != null) {

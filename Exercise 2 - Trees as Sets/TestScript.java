@@ -19,5 +19,4 @@ public class TestScript {
 		String s = list.toString();
 		System.out.println(s);
 	}
-	
 }
