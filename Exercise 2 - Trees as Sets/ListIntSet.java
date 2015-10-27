@@ -10,13 +10,29 @@ public class ListIntSet implements IntSet {
 	
 	public void add(int i) {
 		if(!contains(i)) {
-			
+			if(this.next == null) {
+				this.next = new ListIntSet(i);
+			} else {
+				this.next.add(i);
+			}
 		}
 	}
 	
 
 	public boolean contains(int i) {
-		
+		if(this.next == null) {
+			if(this.value == i) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			if(this.value == i) {
+				return true;
+			} else {
+				return this.next.contains(i);
+			}
+		}
 	}
 	
 
