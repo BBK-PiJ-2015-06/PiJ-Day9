@@ -7,6 +7,7 @@ public class TestScript {
 		tree.add(20);
 		tree.add(11);
 		tree.add(15);
+		tree.add(7);
 		
 			
 		if(tree.containsVerbose(18)) {
@@ -14,5 +15,7 @@ public class TestScript {
 		} else {
 			System.out.println("Tree does not contain this number.");
 		}
+		String s = tree.toString();
+		System.out.print(s);
 	}
 }
