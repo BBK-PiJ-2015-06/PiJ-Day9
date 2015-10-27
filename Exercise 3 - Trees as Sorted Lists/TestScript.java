@@ -13,9 +13,20 @@ public class TestScript {
 		tree.add(35);
 		tree.add(2);
 		tree.add(20);
+		tree.add(5);
+		tree.add(20);
+		tree.add(1);
+		tree.add(20);
+		tree.add(11);
+		tree.add(15);
+		tree.add(7);
+		tree.add(5);
+		tree.add(35);
+		tree.add(2);
+		tree.add(20);
 		
 			
-		if(tree.contains(5)) {
+		if(tree.contains(10)) {
 			System.out.println("Tree already contains this number.");
 		} else {
 			System.out.println("Tree does not contain this number.");
@@ -35,9 +46,20 @@ public class TestScript {
 		list.add(35);
 		list.add(2);
 		list.add(20);
+		list.add(5);
+		list.add(20);
+		list.add(1);
+		list.add(20);
+		list.add(11);
+		list.add(15);
+		list.add(7);
+		list.add(5);
+		list.add(35);
+		list.add(2);
+		list.add(20);
 		
 			
-		if(list.contains(5)) {
+		if(list.contains(10)) {
 			System.out.println("List already contains this number.");
 		} else {
 			System.out.println("List does not contain this number.");

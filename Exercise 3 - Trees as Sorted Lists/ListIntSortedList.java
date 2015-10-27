@@ -10,17 +10,24 @@ public class ListIntSortedList implements IntSortedList {
 	
 	public void add(int i) {
 		ListIntSortedList newValue = new ListIntSortedList(i);
-		if(this.next == null) {
-			if(i >= this.value) {
-				this.next = newValue;
-			}
+		if(i <= this.value) {
+			newValue.next = this.next;
+			this.next = newValue;
+			newValue.value = this.value;
+			this.value = i;
 		} else {
-			if(i <= this.next.value) {
-				newValue.next = this.next;
-				this.next = newValue; 
+			if(this.next == null) {
+				if(i >= this.value) {
+					this.next = newValue;
+				}
 			} else {
-				this.next.add(i);
-			}	
+				if(i <= this.next.value) {
+					newValue.next = this.next;
+					this.next = newValue; 
+				} else {
+					this.next.add(i);
+				}	
+			}
 		}
 	}
 	
