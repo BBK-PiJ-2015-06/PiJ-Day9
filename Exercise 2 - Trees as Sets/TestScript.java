@@ -8,7 +8,7 @@ public class TestScript {
 		tree.add(11);
 		tree.add(15);
 		
-		if(tree.contains(10)) {
+		if(tree.contains(0)) {
 			System.out.println("Tree already contains this number.");
 		} else {
 			System.out.println("Tree does not contain this number.");

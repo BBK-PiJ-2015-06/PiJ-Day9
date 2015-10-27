@@ -46,17 +46,17 @@ public class TreeIntSet implements IntSet {
 					left.contains(i);
 				}
 			}
-		}
+		} return false;
 	}
 	
 
 	public boolean containsVerbose(int i) {
-		
+		return true;
 	}
 	
 
 	public String toString() {
-		
+		return "";
 	}	
 	
 }
