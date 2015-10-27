@@ -8,7 +8,8 @@ public class TestScript {
 		tree.add(11);
 		tree.add(15);
 		
-		if(tree.contains(0)) {
+			
+		if(tree.containsVerbose(18)) {
 			System.out.println("Tree already contains this number.");
 		} else {
 			System.out.println("Tree does not contain this number.");

@@ -12,7 +12,7 @@ public interface IntSet {
 	boolean contains(int i);
 	
 	/**
-	* Returns the same values as the former mehtod.
+	* Returns the same values as the former method.
 	* But for every element that is checked print its value on screen.
 	*/
 	boolean containsVerbose(int i);

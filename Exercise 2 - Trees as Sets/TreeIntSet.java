@@ -34,24 +34,35 @@ public class TreeIntSet implements IntSet {
 			return true;
 		} else {
 			if(i > this.value) {
-				if(right == null) {
-					return false;
-				} else {
-					right.contains(i);
+				if(right != null) {
+					return right.contains(i);
 				}
 			} else {
-				if(left == null) {
-					return false;
-				} else {
-					left.contains(i);
+				if(left != null) {
+					return left.contains(i);
 				}
 			}
-		} return false;
+			return false;
+		} 
 	}
 	
 
 	public boolean containsVerbose(int i) {
-		return true;
+		System.out.println(this.value);
+		if(this.value == i) {
+			return true;
+		} else {
+			if(i > this.value) {
+				if(right != null) {
+					return right.containsVerbose(i);
+				}
+			} else {
+				if(left != null) {
+					return left.containsVerbose(i);
+				}
+			}
+			return false;
+		} 
 	}
 	
 
