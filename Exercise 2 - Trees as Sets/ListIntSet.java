@@ -55,7 +55,10 @@ public class ListIntSet implements IntSet {
 	
 
 	public String toString() {
-		return "";
+		String output = this.value + ", ";
+		if(this.next != null) {
+			output = output + this.next.toString();
+		}
+		return output;
 	}
-	
 }

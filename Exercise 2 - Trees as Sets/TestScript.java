@@ -16,6 +16,8 @@ public class TestScript {
 		} else {
 			System.out.println("List does not contain this number.");
 		}
+		String s = list.toString();
+		System.out.println(s);
 	}
 	
 }
